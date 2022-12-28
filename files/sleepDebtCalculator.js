@@ -16,19 +16,17 @@ const getSleepHours = (day) => {
   }
 };
 
-const getActualSleepHours = () => {
-  getActualSleepHours =
-    getSleepHours("monday") +
-    getSleepHours("tuesday") +
-    getActualSleepHours("wednesday") +
-    getSleepHours("thursday") +
-    getSleepHours("friday") +
-    getSleepHours("saturday") +
-    getSleepHours("sunday");
-  return getActualSleepHours;
-};
+const getActualSleepHours = () =>
+  getSleepHours("monday") +
+  getSleepHours("tuesday") +
+  getSleepHours("wednesday") +
+  getSleepHours("thursday") +
+  getSleepHours("friday") +
+  getSleepHours("saturday") +
+  getSleepHours("sunday");
 
 const getIdealSleepHours = () => {
   const idealHours = 8;
   return idealHours * 7;
 };
+
